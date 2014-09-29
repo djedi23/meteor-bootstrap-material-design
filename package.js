@@ -1,7 +1,7 @@
 Package.describe({
   summary: "Bootstap material design for Meteor",
   version: "0.0.8",
-  git: ""
+  git: "https://github.com/djedi23/meteor-bootstrap-material-design.git"
 });
 
 Package.onUse(function(api) {
