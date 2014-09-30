@@ -9,18 +9,20 @@ Package.onUse(function(api) {
 
   api.use('jquery', 'client');
 
+  api.addFiles('bootstrap-material-design/css-compiled/ripples.css', 'client');
   api.addFiles('bootstrap-material-design/css-compiled/material.css', 'client');
   api.addFiles('bootstrap-material-design/css-compiled/material-wfont.css', 'client');
-  api.addFiles('bootstrap-material-design/css-compiled/ripples.css', 'client');
 
-  api.addFiles('bootstrap-material-design/scripts/material.js', 'client');
-  api.addFiles('bootstrap-material-design/scripts/ripples.js', 'client');
+  api.addFiles('bootstrap-material-design/scripts/ripples.js', 'client', {bare: true});
+  api.addFiles('bootstrap-material-design/scripts/material.js', 'client', {bare: true});
 
   api.addFiles('bootstrap-material-design/icons/icons-material-design.css', 'client');
   api.addFiles('bootstrap-material-design/icons/fonts/Material-Design.eot', 'client');
   api.addFiles('bootstrap-material-design/icons/fonts/Material-Design.svg', 'client');
   api.addFiles('bootstrap-material-design/icons/fonts/Material-Design.ttf', 'client');
   api.addFiles('bootstrap-material-design/icons/fonts/Material-Design.woff', 'client');
+
+  api.export('ripples','client');
 
 });
 
